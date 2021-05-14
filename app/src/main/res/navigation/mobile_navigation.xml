@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_today">
+
+    <fragment
+        android:id="@+id/navigation_today"
+        android:name="com.example.forcast.ui.weather.current.TodayFragment1"
+        android:label="@string/title_today"
+        tools:layout="@layout/fragment_today" />
+
+    <fragment
+        android:id="@+id/navigation_7days"
+        android:name="com.example.forcast.ui.weather.future.List.ForcastFragment"
+        android:label="@string/title_7days"
+        tools:layout="@layout/fragment_forcast" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.forcast.ui.Settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/wheatherDeatilsFragment"
+        android:name="com.example.forcast.ui.weather.future.Details.WheatherDeatilsFragment"
+        android:label="wheather_deatils_fragment"
+        tools:layout="@layout/wheather_deatils_fragment" />
+</navigation>
